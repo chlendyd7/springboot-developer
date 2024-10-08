@@ -1,34 +1,27 @@
-# Java 관련
-*.class
-*.jar
-*.war
-*.ear
-
-# Maven 관련 (Maven 사용 시)
-target/
-*.mvn/
-!**/src/main/resources/
-
-# Gradle 관련 (Gradle 사용 시)
+# Gradle 관련
 .gradle/
 build/
-out/
-**/build/
 
-# IDE 관련
+# IntelliJ IDEA 관련
 .idea/
 *.iml
 *.ipr
 *.iws
-.vscode/
-.settings/
-*.class
 
 # OS 관련
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
+
+# Java 관련
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven 관련
+target/
 
 # 환경 변수 파일
 *.env
@@ -51,5 +44,16 @@ logs/
 *.pid
 *.hprof
 
-# IntelliJ IDEA에서 생성되는 임시 파일
-out/
+# Gradle Wrapper 관련
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# JavaScript 관련
+node_modules/
+npm-debug.log
+
+# 기타
+*.log
+*.class
+*.swp
+*.swo
