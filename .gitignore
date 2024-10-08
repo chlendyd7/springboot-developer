@@ -1,24 +1,55 @@
-# Compiled class file
+# Java 관련
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
+*.ear
+
+# Maven 관련 (Maven 사용 시)
+target/
+*.mvn/
+!**/src/main/resources/
+
+# Gradle 관련 (Gradle 사용 시)
+.gradle/
+build/
+out/
+**/build/
+
+# IDE 관련
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+*.class
+
+# OS 관련
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 환경 변수 파일
+*.env
+
+# 로그 파일
+logs/
+*.log
+
+# 테스트 결과물
+**/target/surefire-reports/
+**/target/failsafe-reports/
+
+# 패키징 및 배포 파일
+*.war
 *.ear
 *.zip
 *.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Spring Boot 실행 시 생성되는 파일
+*.pid
+*.hprof
+
+# IntelliJ IDEA에서 생성되는 임시 파일
+out/
