@@ -28,6 +28,17 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+
+    // 스프링 시큐리티를 사용하기 위한 스타터
+    implementation("org.springframework.boot:spring-boot-starter-security")
+
+    // 타임리프에서 스프링 시큐리티를 사용하기 위한 의존성 추가
+    implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
+    
+    // 스프링 시큐리티를 테스트 하기 위한 의존성 추가
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 tasks.test {
