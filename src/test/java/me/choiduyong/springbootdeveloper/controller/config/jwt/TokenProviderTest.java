@@ -55,7 +55,7 @@ public class TokenProviderTest {
                 .build()
                 .createToken(jwtProperties);
 
-        boolean result = tokenProvider.validateToken(token);
+        boolean result = tokenProvider.validToken(token);
         assertThat(result).isFalse();
     }
 

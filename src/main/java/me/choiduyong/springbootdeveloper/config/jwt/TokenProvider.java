@@ -8,7 +8,6 @@ import me.choiduyong.springbootdeveloper.config.JwtProperties;
 import me.choiduyong.springbootdeveloper.domain.User;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 import io.jsonwebtoken.Jwts;
@@ -42,7 +41,7 @@ public class TokenProvider {
     }
 
     // jwt 토큰 유효성 검증 메서드
-    public boolean validateToken(String token){
+    public boolean validToken(String token){
         try{
             Jwts.parser()
                     .setSigningKey(jwtProperties.getSecretKey())
