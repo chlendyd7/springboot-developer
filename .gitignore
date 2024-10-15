@@ -57,4 +57,4 @@ npm-debug.log
 *.class
 *.swp
 *.swo
-src/main/resources/application.yaml
+application.yaml
